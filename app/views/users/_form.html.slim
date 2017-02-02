@@ -16,7 +16,7 @@
     = f.text_field :last_name
   .form-group
     = f.label :email
-    = f.text_field :email
+    = f.email_field :email
   .form-group
     = f.label :role
     = f.select :roles, options_for_select(Role.all.map {|r| [r.name, r.id]}), {prompt: :select}
